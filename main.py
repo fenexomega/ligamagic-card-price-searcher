@@ -61,8 +61,8 @@ def output_list(deck,filename):
                     c['price'][1]*c['quantity'],c['price'][2]*c['quantity']))
         csv_file.write('\n')
         csv_file.write(f'total min,{deck["min"]:.2f}\n')
-        csv_file.write(f'total min,{deck["med"]:.2f}\n')
-        csv_file.write(f'total min,{deck["max"]:.2f}\n')
+        csv_file.write(f'total men,{deck["med"]:.2f}\n')
+        csv_file.write(f'total max,{deck["max"]:.2f}\n')
 
 
 def main():
