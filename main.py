@@ -133,7 +133,7 @@ def output_list(deck,filename):
 def output_store_list(stores,filename):
     with open(filename,'w',newline='') as csv_file:
         for store in stores:
-            csv_file.write(f'{store} - {stores[store]["total_cards"]} \n')
+            csv_file.write(f'{store}, {stores[store]["total_cards"]} \n')
             fieldnames = ['name','quantity','price','total']
             writer = csv.DictWriter(csv_file,fieldnames=fieldnames)
             writer.writeheader()
